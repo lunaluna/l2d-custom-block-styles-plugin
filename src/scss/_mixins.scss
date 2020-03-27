@@ -1,0 +1,53 @@
+// font-size
+// $size : 文字サイズ
+@mixin fontsize( $size: 16px ) {
+  font-size: ( $size / 16px ) * 1rem;
+}
+
+// レスポンシブな文字サイズ
+// $fontsize : デザイン上の文字サイズ
+// $designwidth : デザインのウィンドウ幅
+@mixin vwfont( $fontsize, $designwidth:768px ) {
+  font-size: ( $fontsize / $designwidth ) * 100vw;
+}
+
+
+// レスポンシブな画像のサイズ指定
+@mixin fluidimage() {
+  width: 100%;
+  height: auto;
+}
+
+
+// 上下左右中央レイアウト
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// mediaQuery Bootstrap4
+@mixin media($size) {
+  @if $size == sm {
+    @media only screen and ( min-width: 576px ) {
+      @content;
+    }
+  } @else if $size == md {
+    @media only screen and ( min-width: 768px ) {
+      @content;
+    }
+  } @else if $size == lg {
+    @media only screen and ( min-width: 992px ) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media only screen and ( min-width: 1200px ) {
+      @content;
+    }
+  } @else {
+    @media only screen and ( min-width: $size ) {
+      @content;
+    }
+  }
+}

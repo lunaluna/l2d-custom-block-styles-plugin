@@ -1,0 +1,34 @@
+{
+  "name": "l2d-custom-block-styles",
+  "version": "1.0.0",
+  "description": "npm-scripts",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "css:compile": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js --output-style compressed --source-map true --source-map-contents true --precision 6 src/scss/l2d_custom_block_styles.scss dist/l2d-custom-block-styles.min.css",
+    "css:prefix": "postcss --config src/postcss.config.js --replace dist/l2d-custom-block-styles.min.css",
+    "css": "npm-run-all -p css:*",
+    "build": "npm-run-all -p css:*",
+    "watch": "onchange 'src/scss' -e '**/*.DS_Store' -- npm run css"
+  },
+  "author": "Hiroki Saiki@mgn",
+  "license": "GPL+2.0",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "node-sass": "^4.12.0",
+    "node-sass-glob-importer": "^5.3.2",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^6.0.0",
+    "postcss-cli": "^6.1.3",
+    "watch": "1.0.2"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead",
+    "ie >= 11",
+    "iOS >= 9",
+    "Android >= 4.4"
+  ]
+}

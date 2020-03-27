@@ -1,0 +1,21 @@
+/*********************************/
+/*
+/* group-block__caution
+/*
+/*********************************/
+.is-style-group-block__caution {
+  display: block;
+  position: relative;
+  padding: 16px;
+  background: repeating-linear-gradient( -45deg, $bg-caution, $bg-caution 10px, #fff 0, #fff 20px );
+  border: 2px solid $caution-color;
+  border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  .is-style-group-block__caution {
+    padding: 24px;
+    border: 3px solid $caution-color;
+    border-radius: 10px;
+  }
+}
