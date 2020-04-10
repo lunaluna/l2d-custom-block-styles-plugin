@@ -7,6 +7,8 @@ $key-color     : #ff4f12;
 $link-color    : #ff4f12;
 $caution-color : #ff4f12;
 $summary-color : rgb( 0, 131, 107 );
+$ad-color      : #0070a7;
 
 $bg-caution    : lighten( $key-color, 44% );
 $bg-summary    : lighten( $summary-color, 73% );
+$bg-ad         : lighten( $ad-color, 65% );
