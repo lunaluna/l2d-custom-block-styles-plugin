@@ -5,14 +5,13 @@
  * Description: custom block styles for block editor
  * Author: Hiroki Saiki
  * Author URI: https://lunalunadesign.net/
- * Version: 1.0.1
+ * Version: 1.0.2
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
- *
  */
 
 // Exit if accessed directly.
-if ( !defined( 'ABSPATH' ) ) {
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
@@ -29,7 +28,7 @@ function l2d_custom_block_styles_assets() {
 		array(
 			'name'         => 'group-block__caution',
 			'label'        => 'デザインブロック [caution]',
-			'style_handle' => 'l2d-custom-block-styles-css'
+			'style_handle' => 'l2d-custom-block-styles-css',
 		)
 	);
 
@@ -38,7 +37,7 @@ function l2d_custom_block_styles_assets() {
 		array(
 			'name'         => 'group-block__summary',
 			'label'        => 'デザインブロック [summary]',
-			'style_handle' => 'l2d-custom-block-styles-css'
+			'style_handle' => 'l2d-custom-block-styles-css',
 		)
 	);
 
@@ -47,7 +46,7 @@ function l2d_custom_block_styles_assets() {
 		array(
 			'name'         => 'group-block__advertise',
 			'label'        => 'デザインブロック [advertise]',
-			'style_handle' => 'l2d-custom-block-styles-css'
+			'style_handle' => 'l2d-custom-block-styles-css',
 		)
 	);
 }
