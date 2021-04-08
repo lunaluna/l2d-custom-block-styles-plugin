@@ -5,7 +5,7 @@
  * Description: custom block styles for block editor
  * Author: Hiroki Saiki
  * Author URI: https://lunalunadesign.net/
- * Version: 1.0.2
+ * Version: 1.0.3
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  */
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function l2d_custom_block_styles_assets() {
 	wp_register_style(
-		'l2d-custom-block-styles-css',
+		'l2d-custom-block-styles',
 		plugins_url( 'dist/l2d-custom-block-styles.min.css', __FILE__ ),
 		array(),
 		filemtime( plugin_dir_path( __FILE__ ) . 'dist/l2d-custom-block-styles.min.css' )
