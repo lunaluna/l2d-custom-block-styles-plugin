@@ -28,7 +28,7 @@ function l2d_custom_block_styles_assets() {
 		array(
 			'name'         => 'group-block__caution',
 			'label'        => 'デザインブロック [caution]',
-			'style_handle' => 'l2d-custom-block-styles-css',
+			'style_handle' => 'l2d-custom-block-styles',
 		)
 	);
 
@@ -37,7 +37,7 @@ function l2d_custom_block_styles_assets() {
 		array(
 			'name'         => 'group-block__summary',
 			'label'        => 'デザインブロック [summary]',
-			'style_handle' => 'l2d-custom-block-styles-css',
+			'style_handle' => 'l2d-custom-block-styles',
 		)
 	);
 
@@ -46,7 +46,7 @@ function l2d_custom_block_styles_assets() {
 		array(
 			'name'         => 'group-block__advertise',
 			'label'        => 'デザインブロック [advertise]',
-			'style_handle' => 'l2d-custom-block-styles-css',
+			'style_handle' => 'l2d-custom-block-styles',
 		)
 	);
 }
